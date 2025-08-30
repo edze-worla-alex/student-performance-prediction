@@ -312,32 +312,6 @@ predictor = StudentPerformancePredictor(random_state=42)
 **`plot_feature_importance(top_n=15)`**
 - Plot feature importance for best model
 
-## File Structure
-
-```
-student-performance-prediction/
-├── student_performance_predictor.py  # Main implementation
-├── README.md                         # This file
-├── requirements.txt                  # Python dependencies
-├── examples/
-│   ├── basic_usage.py               # Basic usage example
-│   ├── advanced_analysis.py         # Advanced features demo
-│   └── batch_prediction.py          # Batch prediction example
-├── data/
-│   ├── sample_student_data.csv      # Sample dataset
-│   └── data_description.txt         # Data dictionary
-├── docs/
-│   ├── *.png      # Sample images
-├── models/
-│   └── student_performance_model.pkl         # Example saved model
-├── notebooks/
-│   ├── EDA_analysis.ipynb           # Detailed exploratory analysis
-│   ├── model_comparison.ipynb       # Model comparison notebook
-│   └── feature_engineering.ipynb    # Feature engineering experiments
-└── tests/
-    ├── test_predictor.py            # Unit tests
-    └── test_data_processing.py      # Data processing tests
-```
 
 ## Educational Applications
 
