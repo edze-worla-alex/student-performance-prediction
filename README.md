@@ -4,7 +4,7 @@ A comprehensive machine learning system that predicts student academic performan
 
 ## Author
 **Edze Worla Alex**
-
+![alt text](docs/graph.png)
 ## Features
 
 - **Multiple ML Algorithms**: Compares Linear Regression, Ridge, Lasso, Random Forest, Gradient Boosting, and SVR
@@ -326,8 +326,10 @@ student-performance-prediction/
 ├── data/
 │   ├── sample_student_data.csv      # Sample dataset
 │   └── data_description.txt         # Data dictionary
+├── docs/
+│   ├── *.png      # Sample images
 ├── models/
-│   └── pretrained_model.pkl         # Example saved model
+│   └── student_performance_model.pkl         # Example saved model
 ├── notebooks/
 │   ├── EDA_analysis.ipynb           # Detailed exploratory analysis
 │   ├── model_comparison.ipynb       # Model comparison notebook
@@ -405,7 +407,8 @@ predictor.models['Random Forest'].set_params(n_jobs=-1)
 from sklearn.feature_selection import SelectKBest, f_regression
 selector = SelectKBest(score_func=f_regression, k=20)
 ```
-
+![alt text](docs/model_performance.png)
+![alt text](docs/cor_mat.png)
 ## Troubleshooting
 
 ### Common Issues
