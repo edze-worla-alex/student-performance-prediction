@@ -104,7 +104,7 @@ import pandas as pd
 predictor = StudentPerformancePredictor(random_state=42)
 
 # Load your data (or generate sample data)
-df = predictor.load_data('your_student_data.csv')  # or df = predictor.load_data() for sample data
+df = predictor.load_data('models/student_performance_model.pkl')  # or df = predictor.load_data() for sample data
 
 # Explore the data
 predictor.explore_data(df, target_column='final_grade')
@@ -145,11 +145,11 @@ best_model = predictor.hyperparameter_tuning(X, y, model_name='Random Forest')
 predictor.plot_feature_importance(top_n=15)
 
 # Save the trained model
-predictor.save_model('my_student_model.pkl')
+predictor.save_model('models/student_performance_model.pkl')
 
 # Load a saved model
 new_predictor = StudentPerformancePredictor()
-new_predictor.load_model('my_student_model.pkl')
+new_predictor.load_model('models/student_performance_model.pkl')
 
 # Make batch predictions
 new_students_df = pd.read_csv('new_students.csv')
